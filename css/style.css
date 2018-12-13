@@ -1,0 +1,190 @@
+* {
+  margin: 0 auto;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+@font-face {
+  font-family: "Anton-Regular";
+  src: url("./fonts/Aton/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("fonts/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./fonts/Lato/Lato-Regular.ttf");
+}
+
+body {
+  font-size: 1em;
+  color: #fff;
+  font-family: 'Lato-Regular', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-family: 'Anton-Regular', sans-serif;
+  color: #fcb731;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Lato-Black', sans-serif;
+}
+
+h3 {
+  font-size: 1em;
+  font-family: 'Lato-Black', sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1em;
+  font-family: 'Lato-Black', sans-serif;
+  color: #6d6f71;
+}
+
+p {
+  font-size: 0.75em;
+  font-family: 'Lato-Regular', sans-serif;
+  color: #6d6f71;
+  text-align: left;
+  margin: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+/*  BARRE DE NAVIGATION  */
+header {
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+}
+
+header nav {
+  height: 100%;
+  display: flex;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 25px;
+}
+
+header nav li {
+  margin: 0;
+  display: inline;
+}
+
+/*  MAIN  */
+.svg {
+  width: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.grid {
+  display: flex;
+}
+
+.energie img {
+  width: 100px;
+}
+
+.model_prod {
+  background-color: #6d6f71;
+  color: #fff;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.actus {
+  background-color: #fcb731;
+  color: #fff;
+}
+
+.actus h4 {
+  color: #fff;
+}
+
+.actus p {
+  color: #fff;
+}
+
+.demarche {
+  background-color: #b3d143;
+  color: #6d6f71;
+}
+
+.installations {
+  background-color: #fff;
+  color: #6d6f71;
+}
+
+.temoignages {
+  background-color: #e8ddca;
+  color: #6d6f71;
+}
+
+.titre_section {
+  display: flex;
+  text-align: left;
+}
+
+.grid {
+  display: flex;
+  color: #6d6f71;
+}
+
+.souscrire {
+  background-color: #fcb731;
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/*  FOOTER  */
+footer {
+  background-color: #6d6f71;
+}
+
+footer h2 {
+  color: #fff;
+  font-size: 2em;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer img {
+  width: 50px;
+}
+
+.partenaires {
+  display: flex;
+}
+
+.follow div {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

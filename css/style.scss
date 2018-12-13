@@ -1,0 +1,196 @@
+$blanc : #fff;
+$marronC : #e8ddca;
+$marronF : #c3a875;
+$jaune : #fcb731;
+$bleu : #00afec;
+$vertC : #b3d143;
+$vertF : #647b22;
+$gris : #6d6f71;
+
+*{
+	margin: 0 auto;
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: $blanc;
+	display: block;
+}
+
+@font-face {
+	font-family: "Anton-Regular";
+	src: url("./fonts/Aton/Anton-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Lato-Black";
+	src: url("fonts/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+	font-family: "Lato-Regular";
+	src: url("./fonts/Lato/Lato-Regular.ttf");
+}
+
+body{
+	font-size: 1em;
+	color: $blanc;
+	font-family: 'Lato-Regular', sans-serif;
+	text-align: center;
+}
+
+h1{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-top: 25px;
+	font-family: 'Anton-Regular', sans-serif;
+	color: $jaune;
+}
+
+h2{
+	font-size: 1.5em;
+	font-family: 'Lato-Black', sans-serif;
+}
+
+h3{
+	font-size: 1em;
+	font-family: 'Lato-Black', sans-serif;
+	text-transform: uppercase;
+}
+
+h4{
+	font-size: 1em;
+	font-family: 'Lato-Black', sans-serif;
+	color: $gris;
+}
+
+p{
+	font-size: 0.75em;
+	font-family: 'Lato-Regular', sans-serif;
+	color: $gris;
+	text-align: left;
+	margin: 15px;
+}
+
+img{
+	width: 100%;
+}
+
+/*  BARRE DE NAVIGATION  */
+
+header{
+	height: 80px;
+	width: 100%;
+	z-index: 1;
+}
+
+header nav {
+	height: 100%;
+	display: flex;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-top: 25px;
+}
+
+header nav li {
+	margin: 0;
+	display: inline;
+}
+
+/*  MAIN  */
+
+.svg{
+	width: 20px;
+}
+
+.logo{
+	width: 100px;
+}
+
+.grid{
+	display: flex;
+}
+
+.energie img{
+	width: 100px;
+}
+
+.model_prod{
+	background-color: $gris;
+	color: $blanc;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.actus{
+	background-color: $jaune;
+	color: $blanc;
+}
+
+.actus h4{
+	color: $blanc;
+}
+.actus p{
+	color: $blanc;
+}
+
+.demarche{
+	background-color: $vertC;
+	color: $gris;
+}
+.installations{
+	background-color: $blanc;
+	color: $gris;
+}
+.temoignages{
+	background-color: $marronC;
+	color: $gris;
+}
+
+.titre_section{
+	display: flex;
+	text-align: left;
+}
+
+.grid{
+	display: flex;
+	color: $gris;
+}
+.souscrire{
+	background-color: $jaune;
+	height: 50px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+/*  FOOTER  */
+
+footer{
+	background-color: $gris;
+}
+
+footer h2 {
+	color: $blanc;
+	font-size: 2em;
+}
+
+footer p {
+	color: $blanc;
+}
+
+footer img{
+	width: 50px;
+}
+
+.partenaires{
+	display: flex;
+}
+
+.follow div{
+	display: flex;
+}
