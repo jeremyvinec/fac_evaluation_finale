@@ -1,4 +1,5 @@
 $blanc : #fff;
+$black : #000;
 $marronC : #e8ddca;
 $marronF : #c3a875;
 $jaune : #fcb731;
@@ -6,6 +7,9 @@ $bleu : #00afec;
 $vertC : #b3d143;
 $vertF : #647b22;
 $gris : #6d6f71;
+
+@import 'nav.scss';
+@import 'layout.scss';
 
 *{
 	margin: 0 auto;
@@ -20,17 +24,17 @@ a{
 
 @font-face {
 	font-family: "Anton-Regular";
-	src: url("./fonts/Aton/Anton-Regular.ttf");
+	src: url("../fonts/Aton/Anton-Regular.ttf");
 }
 
 @font-face {
 	font-family: "Lato-Black";
-	src: url("fonts/Lato/Lato-Black.ttf");
+	src: url("../fonts/Lato/Lato-Black.ttf");
 }
 
 @font-face {
 	font-family: "Lato-Regular";
-	src: url("./fonts/Lato/Lato-Regular.ttf");
+	src: url("../fonts/Lato/Lato-Regular.ttf");
 }
 
 body{
@@ -73,21 +77,21 @@ p{
 	margin: 15px;
 }
 
-img{
-	width: 100%;
-}
-
 /*  BARRE DE NAVIGATION  */
 
 header{
-	height: 80px;
 	width: 100%;
 	z-index: 1;
+	background-image: url("../photos/1.jpg");
+	background-repeat: no-repeat;
+	height: 310px;
+	display: flex;
+	background-size: cover;
 }
 
 header nav {
 	height: 100%;
-	display: flex;
+	//display: flex;
 }
 
 header nav ul {
@@ -105,15 +109,32 @@ header nav li {
 /*  MAIN  */
 
 .svg{
-	width: 20px;
+	width: 25px;
+	height: 25px;
+	float: right;
 }
 
-.logo{
+.svg_production{
+	width: 25px;
+	height: 25px;
+}
+
+.svg_societe{
+	width: 25px;
+}
+
+.svg_energie{
+	width: 50px;
+	height: 50px;
+}
+
+.logo img{
 	width: 100px;
 }
 
 .grid{
 	display: flex;
+	margin-top: 20px;
 }
 
 .energie img{
@@ -123,13 +144,34 @@ header nav li {
 .model_prod{
 	background-color: $gris;
 	color: $blanc;
-	width: 100%;
+	width: 350px;
 	border-radius: 10px;
+}
+
+.model_prod2{
+	margin-top: 20px;
+}
+
+.model_prod3{
+	display: flex;
+	margin-top: 20px;
+}
+
+.model_prod3 h4{
+	float: left;
+	width: 170px;
+	height: 100px;
+	text-align: right;
+}
+
+.model_prod3 p{
+	width: 510px;
 }
 
 .actus{
 	background-color: $jaune;
 	color: $blanc;
+	width: 900px;
 }
 
 .actus h4{
@@ -139,39 +181,54 @@ header nav li {
 	color: $blanc;
 }
 
+.module{
+	display: flex;
+	width: 600px;
+	margin-top: 15px;
+}
+
+.module h4{
+	margin-top: 40px;
+}
+
+.module img{
+	float: left;
+	width: 350px;
+	height: 200px;
+}
+
 .demarche{
 	background-color: $vertC;
 	color: $gris;
+	width: 900px;
 }
 .installations{
 	background-color: $blanc;
 	color: $gris;
+	width: 900px;
 }
 .temoignages{
 	background-color: $marronC;
 	color: $gris;
+	width: 900px;
 }
 
 .titre_section{
-	display: flex;
+	//display: flex;
 	text-align: left;
+	height: 30px;
 }
 
 .grid{
 	display: flex;
 	color: $gris;
 }
-.souscrire{
-	background-color: $jaune;
-	height: 50px;
-	margin: 5px;
-	border-radius: 5px;
-}
 
 /*  FOOTER  */
 
 footer{
 	background-color: $gris;
+	margin-top: 10px;
 }
 
 footer h2 {
@@ -187,10 +244,73 @@ footer img{
 	width: 50px;
 }
 
+section{
+	margin-top: 10px;
+}
+
 .partenaires{
+	display: flex;
+	margin-top: 20px;
+}
+
+.partenaires img{
+	filter: grayscale(1);
+}
+
+.follow{
 	display: flex;
 }
 
 .follow div{
 	display: flex;
+}
+
+.souscrire{
+	color: $black;
+	background-color: $jaune;
+	width: 150px;
+	height: 40px;
+}
+
+.souscrire2{
+	color: $black;
+	background-color: $jaune;
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+}
+
+.text_prod_conso{
+	display: flex;
+	margin-top: 50px;
+}
+
+.text_prod_conso h4{
+	float: left;
+	width: 210px;
+	text-align: right;
+}
+
+.subscribe{
+	margin-top: 20px;
+}
+
+.cooperateurs{
+	color: $marronF;
+}
+
+.installations_logo{
+	color: $vertC;
+}
+
+.production{
+	color: $jaune;
+}
+
+.capital{
+	color: $bleu;
+}
+
+#nav{
+	display: none;
 }

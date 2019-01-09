@@ -1,0 +1,40 @@
+@media screen and (max-width: 800px) {
+
+  .toggle{
+    display: block;
+  }
+
+  #nav{
+    display: none;
+  }
+
+  .text_prod_conso{
+    display: inline-grid !important;
+  }
+
+  .text_prod_conso h4{
+    width: 300px !important;
+    text-align: center !important;
+  }
+
+  section{
+    width: 100% !important;
+  }
+
+  .module{
+    display: block !important;
+    width: 300px !important;
+  }
+
+  .model_prod3{
+    display: inline-grid !important;
+  }
+
+  .model_prod3 h4{
+    text-align: center !important;
+  }
+
+  .follow{
+    display: block !important;
+  }
+}
